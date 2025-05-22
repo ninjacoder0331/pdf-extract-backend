@@ -148,6 +148,10 @@ def health_check():
     """Health check endpoint."""
     return jsonify({"status": "healthy"})
 
+@app.route("/")
+def index():
+    return "Hello World"
+
 @app.route('/api/upload', methods=['POST'])
 def upload_file():
     """Upload and process a PDF file."""
