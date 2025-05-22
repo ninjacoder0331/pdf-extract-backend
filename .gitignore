@@ -6,12 +6,27 @@ yarn-error.log
 .pnp
 .pnp.js
 
-# Environment variables
+# Environment variables and secrets - enhanced security
 .env
+.env.*
 .env.local
+.env.development
 .env.development.local
+.env.test
 .env.test.local
+.env.production
 .env.production.local
+*.env
+.envrc
+.secret*
+.credentials
+.secrets
+*config.json
+*secrets.json
+credentials.json
+.aws/
+.azure/
+.gcloud/
 
 # Build outputs
 /dist
@@ -41,10 +56,6 @@ pids
 *.swp
 *.swo
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # Temp files
 .temp
